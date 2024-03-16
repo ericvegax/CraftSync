@@ -1,7 +1,10 @@
 # CraftSync
-A back-end for your Minecraft Server written in TypeScript
+A back-end for your Minecraft Server written in TypeScript.
 
-## Compatible Databases
+## Description
+<p>CraftSync does all the database heavy-lifting behind the scenes so that your Minecraft Server can run smoothly.</p>
+
+## Compatible Databases (More Coming Soon)
 - Postgres
 
 ## Setup
@@ -13,5 +16,8 @@ $ npm run build
 $ npm run dev
 ```
 
-## Java Side
+## Java-HTTP
 All though there are many ways to make HTTP requests in Java, I recommend using [this](https://github.com/Kong/unirest-java).
+
+## Endpoints
+- **POST** `/login` -> saves/updates player data

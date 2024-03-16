@@ -11,4 +11,4 @@ import { Server } from "./server/server";
 const server = new Server();
 
 server.setRoutes();
-server.runServer();
+server.startServer();

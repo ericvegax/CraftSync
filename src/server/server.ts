@@ -2,7 +2,6 @@ import express, { Router } from 'express';
 import helmet from 'helmet';
 import bodyParser from 'body-parser';
 import * as routes from "./routes";
-import chalk from 'chalk';
 
 export class Server {
 
@@ -17,8 +16,12 @@ export class Server {
     }
 
     public setRoutes = () => {
+        const router: Router = express.Router();
 
+        // Router initializer
+        Object.entries(routes).forEach(([name, route]) => router.use(route.basePath, route.router));
+        this.app.use('/', router);
     };
-
-    public runServer = () => this.app.listen(this.port, () => console.log(`[Server] back-end is running on port: ${this.port}`));
+    
+    public startServer = () => this.app.listen(this.port, () => console.log(`[CraftSync Server] back-end is running on port: ${this.port}`));
 }
