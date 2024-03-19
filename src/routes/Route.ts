@@ -1,4 +1,4 @@
-import express, { Router } from 'express';
+import express, { Router, Response, Request } from 'express';
 
 class Route {
 
@@ -10,7 +10,7 @@ class Route {
         this.router = express.Router();
     }
 
-    registerEvent(path: string, method: Method, call: Function) {
+    registerEvent(path: string, method: Method, call: (req: Request, res: Response) => Promise<any> | void) {
         if (method === Method.GET) {
             this.router.get(path, (req, res) => call(req, res));
         } else {
