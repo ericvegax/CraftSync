@@ -10,7 +10,7 @@ class Route {
         this.router = express.Router();
     }
 
-    registerEvent(path: string, method: Method, call: (req: Request, res: Response) => Promise<any> | void) {
+    registerEvent(path: string, method: Method, call: (req: Request, res: Response) => void) {
         if (method === Method.GET) {
             this.router.get(path, (req, res) => call(req, res));
         } else {
