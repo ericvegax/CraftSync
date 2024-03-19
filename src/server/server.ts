@@ -23,5 +23,5 @@ export class Server {
         this.app.use('/', router);
     };
     
-    public startServer = () => this.app.listen(this.port, () => console.log(`[CraftSync Server] back-end is running on port: ${this.port}`));
+    public startServer = () => this.app.listen(this.port, () => console.log(`[CraftSync] back-end is running on port: ${this.port}`));
 }

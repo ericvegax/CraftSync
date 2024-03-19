@@ -1,5 +1,5 @@
 import { date, serial, text, varchar } from "drizzle-orm/pg-core";
-import { schema } from "../../database/postgres/pg-client";
+import { schema } from "../../../database/postgres/pg-client";
 
 export interface IPlayer {
     id?: number,
@@ -11,7 +11,7 @@ export interface IPlayer {
 
 /* player model */
 const getPlayerTable = () => {
-    return schema.table('account', {
+    return schema.table('Accounts', {
         id: serial('id').primaryKey(),
         unique: varchar('unique', { length: 36 }).notNull(),
         name: varchar('name', { length: 16 }).notNull(),

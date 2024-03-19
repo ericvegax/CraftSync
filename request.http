@@ -1,7 +1,0 @@
-
-POST http://localhost:3000/chat/filter 
-Content-Type: application/json
-
-{
-    "message": "stupid"
-}

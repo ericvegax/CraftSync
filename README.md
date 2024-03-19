@@ -21,3 +21,4 @@ All though there are many ways to make HTTP requests in Java, I recommend using 
 
 ## Endpoints
 - **POST** `/login` -> saves/updates player data
+- **POST** `/chat/filter` -> returns a clean version of the message

@@ -1,4 +1,4 @@
-import Route, { Method } from "../Route";
+import Route, { Method } from "../../Route";
 import { Request, Response } from "express";
 import * as _ from './login-controller';
 
@@ -14,7 +14,10 @@ class Login extends Route {
 
     /** @event Login */
     onLogin(req: Request, res: Response) {
-        
+        _.getPlayer(req.body.name, req.body.unique)
+            .then((p) => {
+                
+            });
     }
 }
 
