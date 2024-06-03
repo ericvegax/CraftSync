@@ -20,5 +20,4 @@ $ npm run dev
 All though there are many ways to make HTTP requests in Java, I recommend using [this](https://github.com/Kong/unirest-java).
 
 ## Endpoints
-- **POST** `/login` -> saves/updates player data
 - **POST** `/chat/filter` -> returns a clean version of the message
