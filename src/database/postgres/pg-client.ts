@@ -5,9 +5,9 @@ import { pgSchema } from "drizzle-orm/pg-core";
 const client = new Client({
     host: (process.env.HOST! || "localhost"),
     port: (parseInt(process.env.PORT!) || 5432),
-    user: (process.env.USER! || "postgres"),
-    password: (process.env.PASSWORD! || "toor"),
-    database: (process.env.DATABASE! || "postgres"),
+    user: (process.env.USER! || "YOUR_USERNAME"),
+    password: (process.env.PASSWORD! || "YOUR_PASSWORD"),
+    database: (process.env.DATABASE! || "YOUR_DATABASE"),
 });
 
 enum Database {
