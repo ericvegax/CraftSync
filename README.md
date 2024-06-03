@@ -1,4 +1,4 @@
-# CraftSync
+# CraftSync (Under Development)
 A back-end for your Minecraft Server written in TypeScript.
 
 ## Description
