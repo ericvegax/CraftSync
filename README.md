@@ -4,9 +4,6 @@ A back-end for your Minecraft Server written in TypeScript.
 ## Description
 <p>CraftSync does all the database heavy-lifting behind the scenes so that your Minecraft Server can run smoothly.</p>
 
-## Compatible Databases (More Coming Soon)
-- Postgres
-
 ## Setup
 To run this project, install it locally using npm:
 ```
